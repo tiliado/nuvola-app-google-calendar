@@ -32,6 +32,7 @@ ICON_SIZE ?= 128
 ICON_SIZES ?= 16 22 24 32 48 64 128 256
 
 # Filenames
+LICENSES = LICENSE
 SOURCE_ICON ?= src/icon.svg
 ICONS_DIR ?= icons
 PNG_ICONS = $(foreach size,$(ICON_SIZES),$(ICONS_DIR)/$(size).png)
@@ -64,3 +65,13 @@ $(ICONS_DIR):
 
 clean:
 	rm -rf $(ICONS_DIR)
+
+# Install files
+install: $(LICENSES) metadata.json integrate.js $(PNG_ICONS) $(SCALABLE_ICON)
+	install -vCd $(DEST)/$(APP_ID)/$(ICONS_DIR)
+	install -vC -t $(DEST)/$(APP_ID) $(LICENSES) metadata.json integrate.js
+	install -vC -t $(DEST)/$(APP_ID)/$(ICONS_DIR) $(PNG_ICONS) $(SCALABLE_ICON)
+
+# Uninstall files
+uninstall:
+	rm -rv $(DEST)/$(APP_ID)
