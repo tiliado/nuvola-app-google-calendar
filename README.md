@@ -1,8 +1,9 @@
 Google Calendar Web App Script
 ==============================
 
-This is an Easter Egg for Nuvola Player 3, so it isn't shown in the services selector dialog,
-but you have to launch it from terminal: ``nuvolaplayer3 -a google_calendar``
+Integration of Google Calendar web app into your linux desktop via
+an experimental Nuvola Apps Alpha mode of
+[Nuvola Player](https://github.com/tiliado/nuvolaplayer).
 
 Features
 --------
@@ -15,7 +16,17 @@ Features
 Support
 -------
 
-This web app script comes with no support. It's an Easter Egg!
+Nuvola Apps Alpha mode of [Nuvola Player](https://github.com/tiliado/nuvolaplayer) is an
+experimental feature and comes with no support for now. We hope to improve this situation when
+[project funding](https://tiliado.eu/nuvolaplayer/funding/) gets better.
+
+Installation
+------------
+
+  * Execute ``make help`` to get help.
+  * Execute ``make build`` to build graphics.
+  * Execute ``make install`` to install files to user's local directory.
+  * Don't execute ``make uninstall``. Why would you do that?
 
 License
 -------
