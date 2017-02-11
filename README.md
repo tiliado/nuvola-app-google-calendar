@@ -1,9 +1,8 @@
-Google Calendar Web App Script
-==============================
+Google Calendar (Nuvola app)
+============================
 
 Integration of Google Calendar web app into your linux desktop via
-an experimental Nuvola Apps Alpha mode of
-[Nuvola Player](https://github.com/tiliado/nuvolaplayer).
+[Nuvola Apps](https://github.com/tiliado/nuvolaplayer).
 
 Features
 --------
@@ -13,25 +12,18 @@ Features
  * Opens external links in your default web browser.
  * Tray icon support.
  
-Support
--------
-
-Nuvola Apps Alpha mode of [Nuvola Player](https://github.com/tiliado/nuvolaplayer) is an
-experimental feature and comes with no support for now. We hope to improve this situation when
-[project funding](https://tiliado.eu/nuvolaplayer/funding/) gets better.
-
 Installation
 ------------
 
-  * Execute ``make help`` to get help.
-  * Execute ``make build`` to build graphics.
-  * Execute ``make install`` to install files to user's local directory.
-  * Don't execute ``make uninstall``. Why would you do that?
+This project uses [Nuvola SDK](https://github.com/tiliado/nuvolasdk#create-new-project). Please refer to
+the [Build a Project Using Nuvola SDK](https://github.com/tiliado/nuvolasdk#build-a-project-using-nuvola-sdk)
+page in order to obtain information about dependencies and installation instructions.
+
 
 License
 -------
 
-Files: icon.png src/icon.svg icons/*.png
+Files: src/icon*.svg
 
 * Author: [Panomedia](https://www.iconfinder.com/paomedia) 
 * Source: <http://www.iconfinder.com/icons/285665/calendar_icon#size=128>
@@ -39,5 +31,5 @@ Files: icon.png src/icon.svg icons/*.png
 
 Files: *
 
-* Author: Copyright 2014-2015 Jiři Janoušek <janousek.jiri@gmail.com> 
+* Author: Copyright 2014-2017 Jiři Janoušek <janousek.jiri@gmail.com> 
 * License: [BSD-2-Clause](./LICENSE)
