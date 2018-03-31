@@ -5,8 +5,9 @@
     "maintainer_link": "https://github.com/fenryxo",
     "version_major": 1,
     "version_minor": 2,
-    "api_major": 3,
-    "api_minor": 0,
+    "requirements": "Chromium[63]",
+    "api_major": 4,
+    "api_minor": 10,
     "categories": "Office;",
     "home_url": "https://www.google.com/calendar/",
     "build": {
