@@ -12,6 +12,11 @@ Features
  * Opens external links in your default web browser.
  * Tray icon support.
 
+Support
+-------
+
+Follow [Bug reporting guidelines](https://github.com/tiliado/nuvolaruntime/wiki/Bug-Reporting-Guidelines).
+
 Installation
 ------------
 
