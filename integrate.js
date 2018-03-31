@@ -54,10 +54,18 @@
     }
 
     // Override default window.alert() to propagate event alerts as desktop notifications
+    this.notificationsEnabled = false
+    Nuvola.core.isComponentActiveAsync('notifications').then(enabled => { this.notificationsEnabled = enabled }).catch(
+      console.log.bind(console))
+    Nuvola.core.connect('ComponentLoaded', this)
+    Nuvola.core.connect('ComponentUnloaded', this)
     var alert = window.alert
-    window.alert = function (text) {
-      Nuvola.Notifications.showNotification(_('Google Calendar Alert'), text, 'appointment-soon', null, false)
-      return alert(text)
+    window.alert = (text) => {
+      if (this.notificationsEnabled) {
+        Nuvola.Notifications.showNotification(_('Google Calendar Alert'), text, 'appointment-soon', null, true)
+      } else {
+        alert(text)
+      }
     }
   }
 
@@ -84,6 +92,18 @@
   WebApp._onNavigationRequest = function (emitter, request) {
     // Google Calendar uses target="_blank" for external links :-)
     request.approved = !request.newWindow
+  }
+
+  WebApp._onComponentUnloaded = function (emitter, component) {
+    if (component === 'notifications') {
+      this.notificationsEnabled = false
+    }
+  }
+
+  WebApp._onComponentLoaded = function (emitter, component) {
+    if (component === 'notifications') {
+      this.notificationsEnabled = true
+    }
   }
 
   WebApp.start()
