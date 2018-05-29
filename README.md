@@ -1,7 +1,7 @@
-Google Calendar (Nuvola app)
-============================
+Google Calendar • Nuvola Apps Runtime
+=====================================
 
-Integration of Google Calendar web app into your linux desktop via
+Integration of Google Calendar into your linux desktop via
 [Nuvola Apps Runtime](https://github.com/tiliado/nuvolaruntime).
 
 Features
@@ -29,9 +29,18 @@ This project uses [Nuvola SDK](https://github.com/tiliado/nuvolasdk#create-new-p
 the [Build a Project Using Nuvola SDK](https://github.com/tiliado/nuvolasdk#build-a-project-using-nuvola-sdk)
 page in order to obtain information about dependencies and installation instructions.
 
+Change log
+----------
 
-License
--------
+See [CHANGELOG.md](./CHANGELOG.md).
+
+Contributing
+------------
+
+See [CONTRIBUTING.md](./CONTRIBUTING.md).
+
+Copyright
+---------
 
 Files: src/icon*.svg
 
