@@ -4,7 +4,7 @@
   "maintainer_name": "Jiří Janoušek",
   "maintainer_link": "https://github.com/fenryxo",
   "version_major": 1,
-  "version_minor": 2,
+  "version_minor": 3,
   "requirements": "Chromium[63]",
   "api_major": 4,
   "api_minor": 11,

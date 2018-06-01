@@ -1,6 +1,9 @@
 Google Calendar Change Log
 ==========================
 
+1.3 - June 1st, 2018
+--------------------
+
  * Ported to Chromium backend.
  * If desktop notifications are enabled, they are used instead of web app alerts.
 
