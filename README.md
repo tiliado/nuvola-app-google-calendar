@@ -15,7 +15,9 @@ Features
 Support
 -------
 
-Follow [Bug reporting guidelines](https://github.com/tiliado/nuvolaruntime/wiki/Bug-Reporting-Guidelines).
+  - Use [Nuvola Runtime issue tracker](https://github.com/tiliado/nuvolaruntime/issues/new/choose)
+    to report bugs, ask questions or suggest features.
+  - Follow [Bug reporting guidelines](https://github.com/tiliado/nuvolaruntime/wiki/Bug-Reporting-Guidelines).
 
 Installation
 ------------
