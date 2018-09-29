@@ -1,4 +1,4 @@
-Google Calendar • Nuvola Apps Runtime
+Google Calendar • Nuvola Apps Runtime [![CircleCI](https://circleci.com/gh/tiliado/nuvola-app-google-calendar/tree/master.svg?style=svg)](https://circleci.com/gh/tiliado/nuvola-app-google-calendar/tree/master)
 =====================================
 
 Integration of Google Calendar into your linux desktop via
