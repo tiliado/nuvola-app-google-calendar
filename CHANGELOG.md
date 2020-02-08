@@ -1,6 +1,8 @@
 Google Calendar Change Log
 ==========================
 
+ * Mask as Safari to work around Google sign-in issues. Issue: tiliado/nuvolaruntime#575
+
 1.3 - June 1st, 2018
 --------------------
 
