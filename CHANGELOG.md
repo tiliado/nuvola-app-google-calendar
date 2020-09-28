@@ -1,6 +1,9 @@
 Google Calendar Change Log
 ==========================
 
+1.4 - September 28, 2020
+------------------------
+
  * Mask as Safari to work around Google sign-in issues. Issue: tiliado/nuvolaruntime#575
  * Google Calendar is deprecated. Issue: tiliado/nuvolaruntime#576
 
