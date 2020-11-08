@@ -26,13 +26,13 @@
 
 (function (Nuvola) {
   // Translations
-  var _ = Nuvola.Translate.gettext
+  const _ = Nuvola.Translate.gettext
 
   // Constants
-  var RUN_IN_BACKGROUND = 'app.run_in_background'
+  const RUN_IN_BACKGROUND = 'app.run_in_background'
 
   // Create new WebApp prototype
-  var WebApp = Nuvola.$WebApp()
+  const WebApp = Nuvola.$WebApp()
 
   WebApp._onInitAppRunner = function (emitter) {
     Nuvola.launcher.setActions(['quit'])
@@ -46,7 +46,7 @@
   WebApp._onInitWebWorker = function (emitter) {
     Nuvola.WebApp._onInitWebWorker.call(this, emitter)
 
-    var state = document.readyState
+    const state = document.readyState
     if (state === 'interactive' || state === 'complete') {
       this._onPageReady()
     } else {
@@ -59,7 +59,7 @@
       console.log.bind(console))
     Nuvola.core.connect('ComponentLoaded', this)
     Nuvola.core.connect('ComponentUnloaded', this)
-    var alert = window.alert
+    const alert = window.alert
     window.alert = (text) => {
       if (this.notificationsEnabled) {
         Nuvola.Notifications.showNotification(_('Google Calendar Alert'), text, 'appointment-soon', null, true)
