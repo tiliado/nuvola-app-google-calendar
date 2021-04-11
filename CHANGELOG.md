@@ -1,6 +1,11 @@
 Google Calendar Change Log
 ==========================
 
+1.5 - April 11th, 2021
+----------------------
+
+ * Reformat code
+
 1.4 - September 28, 2020
 ------------------------
 
